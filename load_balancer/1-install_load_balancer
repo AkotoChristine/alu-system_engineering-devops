@@ -34,11 +34,11 @@ defaults
   timeout server 15s
   timeout http-request 10s
 
-frontend clickviral-tech-frontend
+frontend christineonline-tech-frontend
     bind *:80
-    default_backend clickviral-tech-backend
+    default_backend christineonline-tech-backend
 
-backend clickviral-tech-backend
+backend christineonline-tech-backend
     balance roundrobin
     server 6041-web-01 54.90.233.117:80 check
     server 6041-web-02 3.89.247.11:80 check
